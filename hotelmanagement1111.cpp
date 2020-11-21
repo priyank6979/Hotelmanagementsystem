@@ -1,9 +1,5 @@
 
 
-//C++ PROJECT
-
-//START OF THE PROGRAM FOR HOTEL MANAGEMENT
-
 #include<iostream>
 #include<conio.h>
 #include<fstream>
@@ -13,7 +9,7 @@
 
 using namespace std;
 
-//START OF CLASS
+
 
 
 
@@ -27,24 +23,17 @@ char phone[10];
 
 public:
 
-void main_menu();		//to dispay the main menu
-void add();			//to book a room
-void display(); 		//to display the customer record
-void rooms();			//to display alloted rooms
-void edit();			//to edit the customer record
-int check(int);			//to check room status
-void modify(int);		//to modify the record
-void delete_rec(int);		//to delete the record
-void bill(int);                 //for the bill of a record
+void main_menu();		
+void add();			
+void display(); 	
+void rooms();			
+void edit();			
+int check(int);			
+void modify(int);		
+void delete_rec(int);		
+void bill(int);                 
      };
-    //END OF CLASS
-
-
-
-//FOR DISPLAYING MAIN MENU
-
-
-
+    
 void hotel::main_menu()
 {
 
@@ -96,14 +85,6 @@ getch();
 }
 
 }
-
-
-//END OF MENU FUNCTION
-
-
-//FUNCTION FOR BOOKING OF ROOM
-
-
 void hotel::add()
 {
 
@@ -149,16 +130,6 @@ fout.close();
 
 }
 
-
-//END OF BOOKING FUNCTION
-
-
-//FUNCTION FOR DISPLAYING A PURTICULAR CUSTOMER`S RECORD
-
-
-
-
-
 void hotel::display()
 {
 
@@ -198,13 +169,6 @@ cout<<"\n\n Press any key to continue....!!";
 getch();
 fin.close();
 }
-
-
-//END OF DISPLAY FUNCTION
-
-//FUNCTION TO DISPLAY ALL ROOMS OCCUPIED
-
-
 void hotel::rooms()
 {
 
@@ -229,9 +193,6 @@ getch();
 fin.close();
 
 }
-
-
-//FUNCTION FOR EDITING RECORDS AND FOR BILL
 
 
 void hotel::edit()
@@ -301,7 +262,6 @@ return(flag);
 }
 
 
-//FUNCTION TO MODIFY CUSTOMERS RECORD
 
 
 void hotel::modify(int r)
@@ -345,10 +305,6 @@ file.close();
 }
 
 
-//END OF MODIFY FUNCTION
-
-
-//FUNCTION FOR DELETING RECORD
 
 
 void hotel::delete_rec(int r)
@@ -401,11 +357,6 @@ rename("temp.dat","Record.dat");
 }
 
 
-//END OF DELETE FUNCTION
-
-
-//FUNCTION FOR CUSTOMER`S BILL
-
 void hotel::bill(int r)
 {
 
@@ -452,9 +403,6 @@ if(!f1)
 
 }
 
-//END OF BILLING FUNCTION
-
-//START OF MAIN PROGARM
 
 
 int main()
@@ -476,6 +424,3 @@ getch();
 h.main_menu();
 return 0;
 }
-
-//END OF MAIN PROGRAM
-
